@@ -22,5 +22,4 @@
             <version>${hutool-all}</version>
         </dependency>
     </dependencies>
-
 </project>
