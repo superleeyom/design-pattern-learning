@@ -1,8 +1,8 @@
 package com.leeyom.design.creation.singleton.extend;
 
 import cn.hutool.core.collection.CollUtil;
+import cn.hutool.core.lang.Console;
 import cn.hutool.core.util.RandomUtil;
-import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
 
@@ -13,7 +13,6 @@ import java.util.List;
  *
  * @author leeyom
  */
-@Slf4j
 public class Emperor {
 
     /**
@@ -66,7 +65,7 @@ public class Emperor {
      * 皇帝发话了
      */
     public void say() {
-        log.info(emperorNameList.get(currentNumEmperor) + "开始说话...");
+        Console.log(emperorNameList.get(currentNumEmperor) + "开始说话...");
     }
 
 

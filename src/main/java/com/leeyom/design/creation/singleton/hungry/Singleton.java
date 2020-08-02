@@ -1,13 +1,12 @@
 package com.leeyom.design.creation.singleton.hungry;
 
-import lombok.extern.slf4j.Slf4j;
+import cn.hutool.core.lang.Console;
 
 /**
  * 单例模式：饿汉式（推荐）
  *
  * @author leeyom
  */
-@Slf4j
 public class Singleton {
 
     /**
@@ -35,7 +34,7 @@ public class Singleton {
      * 类中的其他方法
      */
     public void doSomething() {
-        log.info("doSomething...");
+        Console.log("doSomething...");
     }
 
 }

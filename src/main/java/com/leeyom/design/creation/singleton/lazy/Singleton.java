@@ -1,6 +1,6 @@
 package com.leeyom.design.creation.singleton.lazy;
 
-import lombok.extern.slf4j.Slf4j;
+import cn.hutool.core.lang.Console;
 
 /**
  * 单例模式：懒汉式
@@ -9,7 +9,6 @@ import lombok.extern.slf4j.Slf4j;
  *
  * @author leeyom
  */
-@Slf4j
 public class Singleton {
 
     private static Singleton SINGLETON = null;
@@ -37,7 +36,7 @@ public class Singleton {
      * 类中的其他方法
      */
     public void doSomething() {
-        log.info("doSomething...");
+        Console.log("doSomething...");
     }
 
 }
