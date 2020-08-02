@@ -1,3 +1,8 @@
+## 三大分类
+- **创建类**：工厂方法模式（Factory）、建造者模式（Builder）、抽象工厂模式（Abstract Factory）、[单例模式（Singleton）](https://github.com/superleeyom/design-pattern-learning/tree/master/src/main/java/com/leeyom/design/creation/singleton/单例模式.md)、原型模式（Prototype）
+- **结构类**：适配器模式（Adapter）、桥梁模式（Bridge）、组合模式（Composite）、装饰模式（Decorator）、门面模式（Facade）、享元模式（Flyweight）、代理模式（Proxy）
+- **行为类**：责任链模式（Chain of Responsibility）、命令模式（Command）、解释器模式（Interpreter）、迭代器模式（Iterator）、中介者模式（Mediator）、备忘录模式（Memento）、观察者模式（Observer）、状态模式（State）、策略模式（Strategy）、模板方法模式（Template Method）、访问者模式（Visitor）
+
 ## 六大设计原则
 
 ### 单一职责原则
@@ -29,9 +34,3 @@
 ### 开闭原则
 - 定义：**一个软件实体如类、模块和函数应该对扩展开放，对修改关闭**。
 - 通过接口或抽象类可以约束一组可能变化的行为，并且能够实现对扩展开放，其包含三层含义：第一，通过接口或抽象类约束扩展，对扩展进行边界限定，不允许出现在接口或抽象类中不存在的public方法；第二，参数类型、引用对象尽量使用接口或者抽象类，而不是实现类；第三，抽象层尽量保持稳定，一旦确定即不允许修改。
-
-## 三大分类
-- **创建类**：工厂方法模式（Factory）、建造者模式（Builder）、抽象工厂模式（Abstract Factory）、[单例模式（Singleton）](https://github.com/superleeyom/design-pattern-learning/tree/master/src/main/java/com/leeyom/design/creation/singleton/单例模式.md)、原型模式（Prototype）
-- **结构类**：适配器模式（Adapter）、桥梁模式（Bridge）、组合模式（Composite）、装饰模式（Decorator）、门面模式（Facade）、享元模式（Flyweight）、代理模式（Proxy）
-- **行为类**：责任链模式（Chain of Responsibility）、命令模式（Command）、解释器模式（Interpreter）、迭代器模式（Iterator）、中介者模式（Mediator）、备忘录模式（Memento）、观察者模式（Observer）、状态模式（State）、策略模式（Strategy）、模板方法模式（Template Method）、访问者模式（Visitor）
-
