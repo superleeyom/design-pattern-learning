@@ -27,18 +27,19 @@ public abstract class HummerModel {
 
     /**
      * 汽车开始跑起来了
+     * 为了防止恶意的操作，一般模板方法都加上final关键字，不允许被覆写。
      */
-    public void run() {
+    final public void run() {
         // 发动机启用
-        start();
+        this.start();
         // 引擎开始轰鸣
-        engineBoom();
+        this.engineBoom();
         // 控制喇叭，想让它响就响
         if (isAlarm()) {
-            alarm();
+            this.alarm();
         }
         // 汽车停止
-        stop();
+        this.stop();
     }
 
     /**
