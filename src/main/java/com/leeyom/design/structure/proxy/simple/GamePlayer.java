@@ -20,6 +20,10 @@ public class GamePlayer implements IGamePlayer {
         this.name = name;
     }
 
+    public GamePlayer(String name) {
+        this.name = name;
+    }
+
     public void login(String user, String password) {
         Console.log("登录名为 " + user + " 的用户 " + this.name + " 登录成功");
     }

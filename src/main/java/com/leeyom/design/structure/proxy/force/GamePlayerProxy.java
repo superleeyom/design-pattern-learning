@@ -1,10 +1,12 @@
 package com.leeyom.design.structure.proxy.force;
 
 
+import cn.hutool.core.lang.Console;
+
 /**
  * 游戏代理者
  */
-public class GamePlayerProxy implements IGamePlayer {
+public class GamePlayerProxy implements IGamePlayer, IProxy {
 
 
     private IGamePlayer gamePlayer = null;
@@ -28,6 +30,8 @@ public class GamePlayerProxy implements IGamePlayer {
 
     public void upgrade() {
         this.gamePlayer.upgrade();
+        // 升级完了后，结算费用
+        count();
     }
 
     /**
@@ -37,5 +41,9 @@ public class GamePlayerProxy implements IGamePlayer {
      */
     public IGamePlayer getProxy() {
         return this;
+    }
+
+    public void count() {
+        Console.log("升级费用：150元");
     }
 }
