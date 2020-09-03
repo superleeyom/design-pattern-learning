@@ -6,6 +6,7 @@
     <groupId>com.leeyom</groupId>
     <artifactId>design-pattern-learning</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <name>design-pattern-learning</name>
 
     <properties>
         <java.version>1.8</java.version>
