@@ -3,6 +3,58 @@
 - **结构类**：[适配器模式（Adapter）](https://github.com/superleeyom/design-pattern-learning/tree/master/src/main/java/com/leeyom/design/structure/adapter/适配器模式.md)、[桥梁模式（Bridge）](https://github.com/superleeyom/design-pattern-learning/tree/master/src/main/java/com/leeyom/design/structure/bridge/桥梁模式.md)、[组合模式（Composite）](https://github.com/superleeyom/design-pattern-learning/tree/master/src/main/java/com/leeyom/design/structure/composite/组合模式.md)、[装饰模式（Decorator）](https://github.com/superleeyom/design-pattern-learning/tree/master/src/main/java/com/leeyom/design/structure/decorator/装饰模式.md)、[门面模式（Facade）](https://github.com/superleeyom/design-pattern-learning/tree/master/src/main/java/com/leeyom/design/structure/facade/门面模式.md)、[享元模式（Flyweight）](https://github.com/superleeyom/design-pattern-learning/tree/master/src/main/java/com/leeyom/design/structure/flyweight/享元模式.md)、[代理模式（Proxy）](https://github.com/superleeyom/design-pattern-learning/tree/master/src/main/java/com/leeyom/design/structure/proxy/代理模式.md)
 - **行为类**：[责任链模式（Chain of Responsibility）](https://github.com/superleeyom/design-pattern-learning/tree/master/src/main/java/com/leeyom/design/behavior/chain/责任链模式.md)、[命令模式（Command）](https://github.com/superleeyom/design-pattern-learning/tree/master/src/main/java/com/leeyom/design/behavior/command/命令模式.md)、[解释器模式（Interpreter）](https://github.com/superleeyom/design-pattern-learning/tree/master/src/main/java/com/leeyom/design/behavior/interpreter/解释器模式.md)、[迭代器模式（Iterator）](https://github.com/superleeyom/design-pattern-learning/tree/master/src/main/java/com/leeyom/design/behavior/iterator/迭代器模式.md)、[中介者模式（Mediator）](https://github.com/superleeyom/design-pattern-learning/tree/master/src/main/java/com/leeyom/design/behavior/mediator/中介者模式.md)、[备忘录模式（Memento）](https://github.com/superleeyom/design-pattern-learning/tree/master/src/main/java/com/leeyom/design/behavior/memento/备忘录模式.md)、[观察者模式（Observer）](https://github.com/superleeyom/design-pattern-learning/tree/master/src/main/java/com/leeyom/design/behavior/observer/观察者模式.md)、[状态模式（State）](https://github.com/superleeyom/design-pattern-learning/tree/master/src/main/java/com/leeyom/design/behavior/state/状态模式.md)、[策略模式（Strategy）](https://github.com/superleeyom/design-pattern-learning/tree/master/src/main/java/com/leeyom/design/behavior/strategy/策略模式.md)、[模板方法模式（Template Method）](https://github.com/superleeyom/design-pattern-learning/tree/master/src/main/java/com/leeyom/design/behavior/template/模板方法模式.md)、[访问者模式（Visitor）](https://github.com/superleeyom/design-pattern-learning/tree/master/src/main/java/com/leeyom/design/behavior/visitor/访问者模式.md)
 
+## 项目结构
+
+```
+java
+└── com
+    └── leeyom
+        └── design
+            ├── behavior -- 行为类
+            │   ├── interpreter -- 解释器模式
+            │   ├── template -- 模板方法模式
+            │   ├── observer -- 观察者模式
+            │   │   ├── optimize -- 优化版
+            │   │   └── simple -- 简版
+            │   ├── memento -- 备忘录模式
+            │   │   ├── standard -- 标准版
+            │   │   └── clone -- 克隆方式
+            │   ├── chain -- 责任链模式
+            │   ├── state -- 状态模式
+            │   ├── iterator -- 迭代器模式
+            │   ├── visitor -- 访问者模式
+            │   │   ├── multivisitor -- 多访问者模式
+            │   │   └── standard -- 标准版
+            │   ├── command -- 命令模式
+            │   ├── mediator -- 中介者模式
+            │   └── strategy -- 策略模式
+            ├── creation -- 创建类
+            │   ├── abstraction -- 抽象工厂模式
+            │   ├── prototype -- 原型模式
+            │   ├── singleton -- 单例模式
+            │   │   ├── extend -- 多例模式
+            │   │   ├── lazy -- 懒汉式
+            │   │   └── hungry -- 饿汉式
+            │   ├── builder -- 建造者模式
+            │   └── factory -- 工厂方法模式
+            │       ├── multiple -- 多工厂模式
+            │       ├── simple -- 建单工厂模式
+            │       └── standard -- 标准版
+            └── structure -- 结构类
+                ├── proxy -- 代理模式
+                │   ├── dynamic -- 动态代理
+                │   ├── simple -- 普通代理
+                │   └── force -- 强制代理
+                ├── decorator -- 装饰模式
+                ├── bridge -- 桥梁模式
+                ├── facade -- 门面模式
+                ├── adapter -- 适配器模式
+                │   ├── extend -- 扩展版
+                │   └── standard -- 标准版
+                ├── composite -- 组合模式
+                └── flyweight -- 享元模式
+```
+
 ## 六大设计原则
 
 ### 单一职责原则
